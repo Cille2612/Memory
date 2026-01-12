@@ -1,6 +1,6 @@
 // Anwendung:
 var spielfeld = holeGemischteBilder();
-console.log(spielfeld); // Jetzt sind die 24 Bilder wild durcheinander!
+console.log(spielfeld); // Jetzt sind die 20 Bilder wild durcheinander!
 
 var auswahl1 = null;
 var auswahl2 = null;
@@ -48,8 +48,8 @@ $("img").click(function() {
             var karte2 = "#" + id2;
 
             setTimeout(function() {
-                $(karte1).attr("src", "/bilder/Empty.svg");
-                $(karte2).attr("src", "/bilder/Empty.svg");
+                $(karte1).attr("src", "bilder/Empty.svg");
+                $(karte2).attr("src", "bilder/Empty.svg");
                 $(karte1 + ", " + karte2).off("click").css("cursor", "default");
                 
                 // Prüfen, ob alle 12 Paare gefunden wurden
@@ -77,13 +77,13 @@ $("img").click(function() {
 function turnToPicture(id, spielfeld) {
     var spezifisch = "#" + id;      // (z.B. "#4")
     var bildName = spielfeld[id - 1];    // Den Bildnamen aus dem Array holen (Index id-1 ist korrekt!)
-    var pfad = "/bilder/" + bildName;    // 3. Den vollständigen Pfad zusammenbauen
+    var pfad = "bilder/" + bildName;    // 3. Den vollständigen Pfad zusammenbauen
     $(spezifisch).attr("src", pfad); // Das src-Attribut ändern
 }
 
 function turnToCover(id) {
     var spezifisch = "#" + id;      // (z.B. "#4")
-    $(spezifisch).attr("src", "/bilder/Memory.svg"); // Das src-Attribut ändern
+    $(spezifisch).attr("src", "bilder/Memory.svg"); // Das src-Attribut ändern
 }
 
 
