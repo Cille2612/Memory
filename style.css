@@ -1,0 +1,122 @@
+/* WICHTIG: HTML und Body müssen die volle Höhe haben */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stapelt h1, grid und footer übereinander */
+    align-items: center;
+    background-color: rgb(244, 245, 213);
+}
+
+.grid_container {
+    flex: 1; /* Dieser Bereich nimmt den gesamten verfügbaren Platz ein */
+    width: 80%;
+    margin: 0 auto;           /* Zentriert den Container auf der Seite */
+    display: grid;            /* Wechsel von flex zu grid */
+    
+    /* Erstellt 4 Spalten mit gleicher Breite */
+    grid-template-columns: repeat(7, 1fr); 
+    
+    gap: 10px;                /* Abstand zwischen den Karten */
+}
+
+.item {
+    width: 100%;              /* Bild füllt die Spalte aus */
+    aspect-ratio: 1 / 1;      /* Erzwingt ein quadratisches Format */
+    object-fit: cover;        /* Verhindert, dass das Bild verzerrt wird */
+    cursor: pointer;
+    border-radius: 5%;
+
+
+    /* Verhindert das "Ziehen" des Bildes */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    
+    /* Verhindert das Markieren/Blau-Werden */
+    user-select: none;
+    
+    /* Sorgt dafür, dass man sieht, dass man klicken kann */
+    cursor: pointer;
+
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Nerko One';
+    color: #002836;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+p{  
+    font-size: 1.2rem;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #002836;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Zentriert den Text vertikal */
+    justify-content: center; /* Zentriert den Text horizontal */
+}
+
+footer p {
+    margin: 0; /* Verhindert ungewollte Abstände */
+    font-size: 1rem;
+    color: rgb(229, 252, 255); 
+    font-weight: 50;
+}
+
+@media(max-width: 1000px){        /* kleine Screens - handy >- 4 _> rechts, 5 runter  */
+    .grid_container {
+    width: 80%;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 5px;               
+    }
+}
+
+@media(max-width: 800px){        /* kleine Screens - handy >- 4 _> rechts, 5 runter  */
+    .grid_container {
+    width: 90%;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px;               
+    }
+}
+
+@media(max-width: 600px){        /* kleine Screens - handy >- 4 _> rechts, 5 runter  */
+    .grid_container {
+    width: 90%;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px;               
+    }
+}
+
+@media(max-width:400px){        /* kleine Screens - handy >- 4 _> rechts, 5 runter  */
+    .grid_container {
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px;               
+    }
+}
+
+
+
+
+
+
+
+
+
+
