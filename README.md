@@ -8,7 +8,7 @@ Built with **jQuery** and **CSS Grid**.
 ## 🎮 How to Play
 
 **Goal**
-- Find all **12 pairs** of identical animal cards.
+- Find all **10 pairs** of identical animal cards.
 
 **Rules**
 - **Turn:** Click on a card to reveal the animal.
@@ -21,7 +21,7 @@ Built with **jQuery** and **CSS Grid**.
 
 ## 🛠️ Features
 
-- Responsive **4×6 grid layout**
+- Responsive **dynamic grid layout**
 - Smart flip logic (no instant flip-back)
 - Randomized card positions on each reload
 - Sticky footer for a clean UI
