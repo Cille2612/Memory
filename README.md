@@ -1,47 +1,55 @@
-# Memory
-🧠 Animal Memory Game
-A simple and fun web-based Memory game featuring funny animal pictures. Built with jQuery and CSS Grid.
+# 🧠 Animal Memory Game
 
-##🎮 How to Play
-Goal: Find all 12 pairs of identical animal cards.
+A simple and fun web-based Memory game featuring funny animal pictures.  
+Built with **jQuery** and **CSS Grid**.
 
-Turn: Click on a card to reveal the animal behind the cover.
+---
 
-Match: If two consecutive cards match, they will be removed from the field.
+## 🎮 How to Play
 
-No Match: If they don't match, they stay open until you click on the next card, giving you time to memorize them.
+**Goal**
+- Find all **12 pairs** of identical animal cards.
 
-Win: The game ends when all pairs are found. Press any key to restart!
+**Rules**
+- **Turn:** Click on a card to reveal the animal.
+- **Match:** Two matching cards are removed from the field.
+- **No Match:** Cards stay open until the next click.
+- **Win:** The game ends when all pairs are found.
+- **Restart:** Press any key to restart the game.
 
-##🛠️ Features
-Responsive Grid: A clean 4x6 layout that adapts to your screen size.
+---
 
-Smart Logic: Cards don't flip back instantly, allowing the player to memorize the positions at their own pace.
+## 🛠️ Features
 
-Randomized: The animal positions are shuffled every time you reload the game.
+- Responsive **4×6 grid layout**
+- Smart flip logic (no instant flip-back)
+- Randomized card positions on each reload
+- Sticky footer for a clean UI
 
-Sticky Footer: Clean UI with a footer that always stays at the bottom.
+---
 
-##🚀 Technologies used
-HTML5 & CSS3 (Flexbox & Grid)
+## 🚀 Technologies Used
 
-jQuery 3.7.1 (Logic & Animations)
+- HTML5
+- CSS3 (Flexbox & Grid)
+- jQuery 3.7.1
+- Google Fonts  
+  - *Nerko One*  
+  - *Comic Relief*
 
-Google Fonts ("Nerko One" & "Comic Relief")
+---
 
-##📂 Installation
-Clone or download this repository.
+## 📂 Installation
 
-Make sure your folder structure looks like this:
+1. Clone or download this repository
+2. Make sure your folder structure looks like this:
 
-Plaintext
-
+```plaintext
 /root
 ├── index.html
 ├── style.css
 ├── index.js
-└── /bilder
-    ├── Memory.svg (Cover)
-    ├── Empty.svg (Placeholder)
-    └── bild_1.jpg to bild_12.jpg
-Open index.html in any modern web browser.
+└── bilder
+    ├── Memory.svg
+    ├── Empty.svg
+    └── bild_1.jpg – bild_12.jpg
